@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Клеточное наполнение</string>
     <string name="cell">Клетка</string>
+    <string name="button_create_cell">Сотворить</string>
 
     <string-array name="cell_titles">
         <item>Мёртвая</item>

@@ -13,6 +13,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:background="@color/colorPrimary">
 
         <com.google.android.material.appbar.AppBarLayout
@@ -44,13 +45,13 @@
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
             tools:listitem="@layout/item_cell" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/margin_fab"
-            app:srcCompat="@drawable/ic_add"
-            android:onClick="@{() -> vm.clickAddFAB()}"/>
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/button_margin_create_cell"
+            android:text="@string/button_create_cell"
+            android:onClick="@{() -> vm.clickCreateCell()}"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

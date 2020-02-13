@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_fab">16dp</dimen>
+    <dimen name="button_margin_create_cell">16dp</dimen>
 
     <dimen name="cell_card_margin_top_and_bottom">2dp</dimen>
     <dimen name="cell_card_margin_start_and_end">16dp</dimen>

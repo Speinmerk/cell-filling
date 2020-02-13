@@ -7,7 +7,7 @@ class MainViewModel : ViewModel() {
 
     val adapter = CellAdapter()
 
-    fun clickAddFAB() {
+    fun clickCreateCell() {
         val type = CellType.values()[Random.nextInt(0, 2)]
         val cell = Cell(type)
         val lastCells = adapter.takeLast(2)
