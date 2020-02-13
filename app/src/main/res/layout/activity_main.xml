@@ -10,11 +10,11 @@
             type="ru.speinmerk.cell_filling.MainViewModel" />
     </data>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/colorPrimary">
+        android:background="@drawable/background_main">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/toolbarLayout"
@@ -25,7 +25,6 @@
                 android:id="@+id/toolbar"
                 android:layout_width="wrap_content"
                 android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
                 android:layout_gravity="center"
                 app:titleTextColor="@android:color/white"
                 app:title="@string/app_name"/>
@@ -35,24 +34,22 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/background_main"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             app:layoutManager="LinearLayoutManager"
             app:adapter="@{vm.adapter}"
             app:scrollTo="@{vm.adapter.scrollTo}"
-            app:layout_anchor="@id/toolbarLayout"
-            app:layout_anchorGravity="bottom"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
             tools:listitem="@layout/item_cell" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_margin="@dimen/button_margin_create_cell"
+            android:layout_marginStart="@dimen/button_margin_create_cell"
+            android:layout_marginEnd="@dimen/button_margin_create_cell"
             android:text="@string/button_create_cell"
             android:onClick="@{() -> vm.clickCreateCell()}"/>
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
 
 </layout>
