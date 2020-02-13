@@ -5,7 +5,7 @@
     <dimen name="cell_card_margin_top_and_bottom">2dp</dimen>
     <dimen name="cell_card_margin_start_and_end">16dp</dimen>
     <dimen name="cell_card_corner_radius">8dp</dimen>
-    <dimen name="cell_image_layout_margin">20dp</dimen>
+    <dimen name="cell_image_layout_margin">16dp</dimen>
     <dimen name="cell_image_size">20dp</dimen>
     <dimen name="cell_image_background">40dp</dimen>
     <dimen name="cell_image_background_radius">20dp</dimen>
