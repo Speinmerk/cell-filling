@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">cell-filling</string>
+    <string name="app_name">Клеточное наполнение</string>
+    <string name="cell">Клетка</string>
+
+    <string-array name="cell_titles">
+        <item>Мёртвая</item>
+        <item>Живая</item>
+        <item>Жизнь</item>
+    </string-array>
+
+    <string-array name="cell_descriptions">
+        <item>или прикидывается</item>
+        <item>и шевелится!</item>
+        <item>Ку-ку!</item>
+    </string-array>
+
 </resources>
